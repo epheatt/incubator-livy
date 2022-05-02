@@ -18,7 +18,7 @@
 package org.apache.livy.repl
 
 import java.io.File
-import java.net.URLClassLoader
+import java.net.{URL, URLClassLoader}
 import java.nio.file.{Files, Paths}
 
 import scala.tools.nsc.Settings

@@ -48,6 +48,8 @@ class LivySparkUtilsSuite extends FunSuite with Matchers with LivyBaseUnitTestSu
     testSparkVersion("2.3.0")
     testSparkVersion("2.4.0")
     testSparkVersion("3.0.0")
+    testSparkVersion("3.1.0")
+    testSparkVersion("3.2.1")
   }
 
   test("should complain about unsupported Spark versions") {
@@ -109,5 +111,7 @@ class LivySparkUtilsSuite extends FunSuite with Matchers with LivyBaseUnitTestSu
     sparkScalaVersion(formatSparkVersion("2.2.0"), None, livyConf) shouldBe "2.11"
     sparkScalaVersion(formatSparkVersion("2.3.1"), None, livyConf) shouldBe "2.11"
     sparkScalaVersion(formatSparkVersion("3.0.0"), None, livyConf) shouldBe "2.12"
+    sparkScalaVersion(formatSparkVersion("3.1.0"), None, livyConf) shouldBe "2.12"
+    sparkScalaVersion(formatSparkVersion("3.2.0"), None, livyConf) shouldBe "2.12"
   }
 }
