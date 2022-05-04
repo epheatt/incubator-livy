@@ -22,7 +22,7 @@ import io.fabric8.kubernetes.api.model.{Pod, PodStatus, ObjectMeta}
 import io.fabric8.kubernetes.api.model.networking.v1.{Ingress, IngressRule, IngressSpec}
 import org.mockito.Mockito.when
 import org.scalatest.FunSpec
-import org.scalatest.mock.MockitoSugar._
+import org.scalatestplus.mockito.MockitoSugar.mock
 
 import org.apache.livy.{LivyBaseUnitTestSuite, LivyConf}
 
